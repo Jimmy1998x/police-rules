@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Rules</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>👮 ค่าปรับ - จำคุก / โทษวินัย</h1>
+        <p>Police Rules Database</p>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 ค้นหาชื่อคดี..."
+        >
+
+        <div class="menu">
+            <button onclick="filterCategory('ทั้งหมด')">ทั้งหมด</button>
+            <button onclick="filterCategory('สิ่งผิดกฎหมาย')">สิ่งผิดกฎหมาย</button>
+            <button onclick="filterCategory('ค่าปรับทั่วไป')">ค่าปรับทั่วไป</button>
+            <button onclick="filterCategory('คดีประชาชน')">คดีประชาชน</button>
+            <button onclick="filterCategory('คดีเกี่ยวกับหน่วยงาน')">คดีเกี่ยวกับหน่วยงาน</button>
+            <button onclick="filterCategory('คดีแดง')">คดีแดง</button>
+        </div>
+
+    </div>
+
+    <div id="tables"></div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
