@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ฐานข้อมูลคดีตำรวจ</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+        <h1>👮 ฐานข้อมูลคดีตำรวจ</h1>
+
+        <p>
+            Police Rules Database
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 ค้นหาชื่อคดี..."
+            >
+
+        </div>
+
+    </header>
+
+    <section class="category">
+
+        <button onclick="filterCategory('ทั้งหมด')">
+            ทั้งหมด
+        </button>
+
+        <button onclick="filterCategory('สิ่งผิดกฎหมาย')">
+            สิ่งผิดกฎหมาย
+        </button>
+
+        <button onclick="filterCategory('ค่าปรับทั่วไป')">
+            ค่าปรับทั่วไป
+        </button>
+
+        <button onclick="filterCategory('คดีประชาชน')">
+            คดีประชาชน
+        </button>
+
+        <button onclick="filterCategory('คดีแดง')">
+            คดีแดง
+        </button>
+
+        <button onclick="filterCategory('คดีเกี่ยวกับหน่วยงาน')">
+            คดีเกี่ยวกับหน่วยงาน
+        </button>
+
+    </section>
+
+    <section id="loading">
+
+        กำลังโหลดข้อมูล...
+
+    </section>
+
+    <section id="tables">
+
+    </section>
+        <footer class="footer">
+
+        <p>
+            ฐานข้อมูลคดีตำรวจ
+        </p>
+
+        <p>
+            ข้อมูลอัปเดตจาก Google Sheets แบบอัตโนมัติ
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
